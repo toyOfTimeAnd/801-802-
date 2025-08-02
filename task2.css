@@ -21,9 +21,9 @@ h1 {
     /*внешний отступ*/
     margin: 20px;
     /*внутренний отступ*/
-    padding: 20 px;
+    padding: 20px;
     /*Ширина*/
-    max-width: 500 px;
+    max-width: 500px;
     background: white;
     color: rgb(8, 8, 8);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -36,7 +36,7 @@ h1 {
     transform: scale(1.05)
 }
 
-.img {
+.card img {
     width: 100%;
     border-radius: 10px;
 }
@@ -71,9 +71,9 @@ h1 {
 }
 
 .btn:transition {
-    opacity 0.3s
-};
+    opacity: 0.3s
+}
 
 .btn:hover {
-    opacity: 0.8
+    opacity: 0.8s
 }
