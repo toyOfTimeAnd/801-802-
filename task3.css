@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Pinyon+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body {
+    min-height: 100vh;
+}
+
+.cards {
+    display: flex;
+    gap: 2px;
+    color: white;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    border: 2px solid;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+
+
+}
+
+
+.card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1;
+    gap: 16px;
+
+
+
+}
+
+
+.cards:hover {
+    transform: scale(105%);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+.h3 {
+    text-transform: lowercase;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.card1 {
+    background: linear-gradient(to bottom, red, black);
+    background-image: url(кхорн.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.card2 {
+    background: linear-gradient(to bottom, rgb(0, 255, 85), rgb(22, 18, 18));
+    background-image: url(нургл\ оконч.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+}
+
+.card3 {
+    background: linear-gradient(to bottom, rgb(0, 255, 85), rgb(22, 18, 18));
+    background-image: url(Тзинч.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    color: blue
+}
+
+.card4 {
+    background: linear-gradient(white, rgb(143, 41, 112));
+    background-image: url(слаанеш.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    color: blueviolet
+}
