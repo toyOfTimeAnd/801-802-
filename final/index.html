@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоговая работа ОФWP-801</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">ПРИМАРХИ<span>WH40K</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="https://wahapedia.ru/wh40k10ed/the-rules/quick-start-guide"
+                                class="nav__link">Вахапедия</a></li>
+                        <li class="nav__item"><a href="https://warhammer40k.fandom.com/ru/wiki/Warhammer_40000_Wiki"
+                                class="nav__link">ВахаВики</a></li>
+                        <li class="nav__item"><a href="https://www.newrecruit.eu" class="nav__link">Составь свой
+                                ростер</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">ПРИМАРХИ WH40K: Краткий справочник</h1>
+                <p class="hero__subtitle">Больше не нужно учить имена всех примархов наизусть! </p>
+                <p class="hero_text">Уже давно играешь, но так и не выучил всех примархов по именам? Открываешь
+                    официальный справочник и тонешь в бесконечных деталях их биографий? Только начинаешь свой путь как
+                    игрок, и глаза разбегаются, не знаешь, кого выбрать? Хочешь познакомить друга с миром далекого
+                    мрачного будущего, где есть только война, да смех жаждущих богов? Тебе сюда! </p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Выяснить, кто есть кто</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/заставка возм.jpg" alt="Общий портрет примархов">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">Кто тебе нужен?</h2>
+                        <div class="btn btn--primary">
+                            <input type="text" id="searchInput" placeholder='"Пертурабо"'>
+                            <button id="searchButton">Поиск</button>
+                            <div id="result"></div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+            <h2 class="section-title">Примархи: кто есть кто</h2>
+            <div class="menu__grid">
+                <div class="menu-item gr1">
+                    <div class="menu-item__header">
+                        <div class="about__image"></div>
+                        <img src="images/loyalists.jpg" alt="Лояльные примархи">
+                        <h3 class="menu-item__title">Лоялисты</h3>
+                        <div class="btn btn--menu">
+                            <button id='button1'>ЛОЯЛИСТЫ</button>
+                            <div id="ЛОЯЛИСТЫ"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu-item gr2">
+                    <div class="menu-item__header">
+                        <h3 class="menu-item__title">Трейторы</h3>
+                        <div class="about__image"></div>
+                        <img src="images/traitors.jpg" alt="Предатели">
+                        <div class="btn btn--menu">
+                            <button id='button2'>ТРЕЙТОРЫ</button>
+                            <div id="ТРЕЙТОРЫ"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item gr3">
+                    <div class="menu-item__header">
+                        <h3 class="menu-item__title">Живые</h3>
+                        <div class="about__image"></div>
+                        <img src="images/alive.jpg" alt="Живые">
+                        <div class="btn btn--menu">
+                            <button id='button3'>ЖИВЫЕ</button>
+                            <div id="ЖИВЫЕ"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item gr4">
+                    <div class="menu-item__header">
+                        <h3 class="menu-item__title">Мертвые</h3>
+                        <div class="about__image"></div>
+                        <img src="images/dead.jpg" alt="Мертвые">
+                        <div class="btn btn--menu">
+                            <button id='button4'>МЕРТВЫЕ</button>
+                            <div id="МЕРТВЫЕ"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item gr5">
+                    <div class="menu-item__header">
+                        <h3 class="menu-item__title">Пропавшие без вести</h3>
+                        <div class="about__image"></div>
+                        <img src="images/lost.jpg" alt="Пропавшие">
+                        <div class="btn btn--menu">
+                            <button id='button5'>ПРОПАВШИЕ БЕЗ ВЕСТИ</button>
+                            <div id="ПРОПАВШИЕ БЕЗ ВЕСТИ"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item gr6">
+                    <div class="menu-item__header">
+                        <h3 class="menu-item__title">Все сразу</h3>
+                        <div class="about__image"></div>
+                        <img src="images/all.jpg" alt="вcе сразу">
+                        <div class="btn btn--menu">
+                            <button id='button'>Все сразу</button>
+                            <div id="Все сразу"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span> [718.875, 1574.125] </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>8 (812) 770-22-20</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>primarchs18@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>круглосуточно</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://vk.com/lamppost_news" class="social-link" aria-label="vk"><i
+                                    class="fab fa-vk"></i></a>
+                            <a href="https://t.me/warpham" class="social-link" aria-label="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://jambonium.co.uk/40kmap" width="100%" height="100%" style="border:0;"
+                            allowfullscreen="" loading="eager"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">ПРИМАРХИ<span>WH40K</span></a>
+                    <p class="footer__text">Узнай, кто есть кто</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Наверх</a></li>
+                        <li><a href="#menu" class="footer__link">Примархи</a></li>
+                        <li><a href="#about" class="footer__link">Найди своего</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© toyOfTimeAnd</p>
+            </div>
+        </div>
+    </footer>
+
+<!--<script>src="js/primarchs.js"</script>-->
+</body>
+
+</html>
