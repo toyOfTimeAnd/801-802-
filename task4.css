@@ -175,7 +175,6 @@ h1 {
 
 
 .claim_grid {
-    min-height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -312,5 +311,6 @@ input[type="text"] {
             "gr4"
             "gr5"
             "gr6"*/
+
 
 }
